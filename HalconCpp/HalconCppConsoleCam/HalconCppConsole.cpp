@@ -15,6 +15,8 @@ using namespace std;
 #include <iostream>
 #include"sstream"
 #include <windows.h>
+#include <stdlib.h>
+
 
 //自写函数头
 #include "hal.h"
@@ -55,11 +57,11 @@ int main()
 		std::cout << "TRYING START!!!" << "\n";
 		while (true)
 		{
-			/*OpenFramegrabber("GigEVision2", 0, 0, 0, 0, 0, 0, "progressive", -1, "default",
-				-1, "false", "default", "c42f90f2b7fa_Hikvision_MVCE12010GM", 0, -1, &hv_AcqHandle);*/
 			OpenFramegrabber("GigEVision2", 0, 0, 0, 0, 0, 0, "progressive", -1, "default",
-				-1, "false", "default", "c42f90f4cec5_Hikvision_MVCL02041GC", 0, -1, &hv_AcqHandle);
-			/*open_framegrabber('GigEVision2', 0, 0, 0, 0, 0, 0, 'progressive', -1, 'default', -1, 'false', 'default', 'c42f90f4cec5_Hikvision_MVCL02041GC', 0, -1, AcqHandle);*/
+				-1, "false", "default", "c42f90f2b7fa_Hikvision_MVCE12010GM", 0, -1, &hv_AcqHandle);
+			/*OpenFramegrabber("GigEVision2", 0, 0, 0, 0, 0, 0, "progressive", -1, "default",
+				-1, "false", "default", "c42f90f4cec5_Hikvision_MVCL02041GC", 0, -1, &hv_AcqHandle);*/
+		
 			GrabImageStart(hv_AcqHandle, -1);
 
 			GrabImageAsync(&ho_Image, hv_AcqHandle, -1);
@@ -79,4 +81,6 @@ int main()
 		std::cout << string(except.ErrorMessage()) << "\n";
 	}
 	
+
+	system("PAUSE ");
 }

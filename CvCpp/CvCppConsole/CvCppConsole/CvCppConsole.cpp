@@ -1,11 +1,28 @@
 ﻿// CvCppConsole.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
+#include <iostream>  
+#include <opencv2/core/core.hpp>  
+#include <opencv2/highgui/highgui.hpp>
 
-#include <iostream>
+
+//using namespace std; 
+using namespace cv;
+
+
+
 
 int main()
 {
+
     std::cout << "Hello World!\n";
+	// 读入一张图片（poyanghu缩小图）    
+	Mat img = imread("C:\\WK\\demo.jpg");
+	//// 创建一个名为 "图片"窗口    
+	//namedWindow("图片");
+	//// 在窗口中显示图片   
+	imshow("图片", img);
+	//// 等待6000 ms后窗口自动关闭    
+	waitKey(6000);
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

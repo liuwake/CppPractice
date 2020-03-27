@@ -14,7 +14,7 @@ using namespace cv;
 int main()
 {
 
-    std::cout << "Hello World!\n";
+	std::cout << "Hello World!\n";
 	// 读入一张图片（poyanghu缩小图）    
 	Mat img = imread("C:\\WK\\demo.jpg");
 	//// 创建一个名为 "图片"窗口    

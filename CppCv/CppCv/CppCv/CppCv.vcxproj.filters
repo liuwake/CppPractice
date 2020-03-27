@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CvCppConsole.cpp">
+    <ClCompile Include="CppCv.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

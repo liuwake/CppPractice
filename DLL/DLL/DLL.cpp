@@ -5,8 +5,9 @@
 #include <iostream>
 // DLL关联
 #include "../DllExport/DLLExport.h"
-#pragma comment(lib, "C:/Users/iwake/OneDrive - wake/Desktop/CppPractice/DLL/x64/Debug/DLLEXPORT.lib")//注意commnet拼写;注意绝对路径填写,否则打不开lib
-
+#pragma comment(lib, "C:/Users/iwake/OneDrive - wake/Desktop/CppPractice/DLL/x64/Debug/DLLEXPORT.lib")
+//注意commnet拼写;注意绝对路径填写,否则打不开lib
+//ref:C++ 无法打开文件“xxx.lib”错误的解决办法 https://blog.csdn.net/weixin_36212725/article/details/99940844 解决方法2
 int main()
 {
 	CDLLExport dll;

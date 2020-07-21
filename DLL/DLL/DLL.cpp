@@ -1,10 +1,11 @@
-﻿// DLL.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿
+// DLL.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include <iostream>
 // DLL关联
 #include "../DllExport/DLLExport.h"
-#pragma coment(lib, "DLLEXPORT.lib")
+#pragma comment(lib, "C:/Users/iwake/OneDrive - wake/Desktop/CppPractice/DLL/x64/Debug/DLLEXPORT.lib")//注意commnet拼写;注意绝对路径填写,否则打不开lib
 
 int main()
 {

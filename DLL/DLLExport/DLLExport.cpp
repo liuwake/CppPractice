@@ -1,5 +1,6 @@
 ﻿// DLLExport.cpp : 定义 DLL 的导出函数。
-//
+//参考:https://blog.csdn.net/qq_40041064/article/details/106831801
+//项目重定向到win10 10.0.17(不要用10.0.19,太新)
 
 #include "pch.h"
 #include "framework.h"
